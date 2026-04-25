@@ -250,17 +250,21 @@
 /* middle folder section */
 
 .folder-info-text {
-  margin-top: 32px;
+  margin-top: 48px;
   padding: 0 20px;
+  margin-bottom: 20px;
 }
 
-.folder-info-text h4 {
+.folder-info-text h2 {
   font-size: 2rem;
+  font-weight: bold;
+  color: #000;
 }
 
 .folder-info-text p {
   color: #000;
   font-size: 1.6rem;
+  font-weight: 600;
 }
 
 .folder-container {
@@ -312,4 +316,27 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* bottom section */
+
+.bottom-folder-header {
+  margin: 24px 16px 20px;
+  padding: 0 8px;
+  font-size: 2rem;
+  color: #000;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.gallery-container img {
+  width: 100%;
+  margin-bottom: 16px;
+  break-inside: avoid; 
+  border-radius: 10px;
 }
