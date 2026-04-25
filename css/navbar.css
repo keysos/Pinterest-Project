@@ -1,0 +1,41 @@
+#navbar {
+  position: fixed;
+  overflow: hidden auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 72px;
+  border-right: 1px solid #c8c8c1;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navlist {
+  list-style: none;
+  padding: 16px 0;
+}
+
+.navlist.top li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 24px;
+}
+
+.navlist.bottom {
+  margin-bottom: 0;
+}
+
+.navbar-item {
+  position: relative;
+  top: -2px;
+  left: 1px;
+  font-size: 2.4rem;
+}
+
+.navbar-item i {
+  color: #000;
+}
