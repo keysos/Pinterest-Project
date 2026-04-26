@@ -5,9 +5,9 @@
 
 /* header */
 .profile-header {
-  width: calc(100% - 72px);
+  width: 100%;
   max-height: 1000px;
-  position: fixed;
+  position:sticky;
   top: 0;
   left: 72px;
   background: #fff;
@@ -242,7 +242,6 @@
 
 .folder-section {
   position: relative;
-  top: 280px;
 }
 
 .top-folder-section {
@@ -392,11 +391,12 @@
   }
 
   .profile-section {
-    flex-direction: column;
+    /*flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 16px;
+    gap: 16px;*/
+    display: none;
   }
 
   .profile-info {
