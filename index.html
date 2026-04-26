@@ -13,86 +13,86 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav id="navbar">
-            <ul class="top navlist">
+    <div class="layout">
+        <nav class="sidebar">
+            <ul class="sidebar-list sidebar-list-top">
                 <li>
-                    <a href="#" class="navbar-item">
+                    <a href="#" class="sidebar-item">
                         <i class="fa-brands fa-pinterest" style="color: rgb(166, 44, 16);"></i>
-                        <span class="tooltip-text">Página Inicial</span>
+                        <span class="tooltip">Página Inicial</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="navbar-item">
+                    <a href="#" class="sidebar-item">
                         <i class="fa-solid fa-house"></i>
-                        <span class="tooltip-text">Página Inicial</span>
+                        <span class="tooltip">Página Inicial</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="navbar-item">
+                    <a href="#" class="sidebar-item">
                         <i class="fa-regular fa-compass"></i>
-                        <span class="tooltip-text">Explorar</span>
+                        <span class="tooltip">Explorar</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="navbar-item">
+                    <a href="#" class="sidebar-item">
                         <i class="fa-regular fa-folder"></i>
-                        <span class="tooltip-text">Suas pastas</span>
+                        <span class="tooltip">Suas pastas</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="navbar-item">
+                    <a href="#" class="sidebar-item">
                         <i class="fa-solid fa-plus"></i>
-                        <span class="tooltip-text">Criar</span>
+                        <span class="tooltip">Criar</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="navbar-item">
+                    <a href="#" class="sidebar-item">
                         <i class="fa-regular fa-bell"></i>
-                        <span class="tooltip-text">Atualizações</span>
+                        <span class="tooltip">Atualizações</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="navbar-item">
+                    <a href="#" class="sidebar-item">
                         <i class="fa-regular fa-message"></i>
-                        <span class="tooltip-text">Mensagens</span>
+                        <span class="tooltip">Mensagens</span>
                     </a>
                 </li>
             </ul>
 
-            <ul class="bottom navlist">
+            <ul class="sidebar-list sidebar-list-bottom">
                 <li>
-                    <a href="#" class="navbar-item">
+                    <a href="#" class="sidebar-item">
                         <i class="fa-solid fa-gear" style="color: rgb(0, 0, 0);"></i>
-                        <span class="tooltip-text">Configurações e suporte</span>
+                        <span class="tooltip">Configurações e suporte</span>
                     </a>
                 </li>
             </ul>
         </nav>
 
-        <div class="inner-container">
-            <div class="profile-header">
-                <div class="top-profile-header">
-                    <div class="search-container">
+        <div class="app">
+            <header class="profile">
+                <div class="profile-header-top">
+                    <div class="search">
 
-                        <button class="search-btn" type="submit">
+                        <button class="search-button" type="submit">
                             <i class="fa-solid fa-magnifying-glass" style="color: #62625b;"></i>
                         </button>
 
-                        <input class="search-bar" type="search" placeholder="Pesquisar seus Pins">
+                        <input class="search-input" type="search" placeholder="Pesquisar seus Pins">
                     </div>
 
                     <div class="profile-picture">
                         <img src="images/profile-picture.jpg" alt="Profile picture">
-                        <span class="tooltip-text">Seu perfil</span>
+                        <span class="tooltip">Seu perfil</span>
                         <i class="fa-solid fa-chevron-down" style="color:  #62625b;"></i>
-                        <span class="tooltip-text">Contas</span>
+                        <span class="tooltip">Contas</span>
                     </div>
 
 
                 </div>
-                <div class="bottom-profile-header">
-                    <div class="top-subheader">
+                <div class="profile-header-bottom">
+                    <div class="top-subheader container-center">
                         <h1>Suas ideias salvas</h1>
                         <div class="profile-section">
                             <img src="images/profile-picture.jpg" alt="Profile picture">
@@ -100,38 +100,38 @@
                                 <span>Keysos 見習い</span>
                                 <span>Seguindo 0</span>
                             </div>
-                            <button class="share-profile btn">Compartilhar perfil</button>
+                            <button class="share-profile btn-gray btn">Compartilhar perfil</button>
                         </div>
                     </div>
-                    <div class="bottom-subheader">
+                    <div class="bottom-subheader container-center">
                         <div>
-                            <span>Pins</span>
+                            <span class="profile__tab">Pins</span>
                         </div>
                         <div>
-                            <span>Pastas</span>
+                            <span class="profile__tab profile__tab--active">Pastas</span>
                         </div>
                         <div>
-                            <span>Colagens</span>
+                            <span class="profile__tab">Colagens</span>
                         </div>
                     </div>
                 </div>
-                <div class="profile-publish">
-                    <div class="left-profile-publish">
+                <div class="profile-actions container-center">
+                    <div class="profile-actions-left">
                         <i class="fa-solid fa-sliders"></i>
-                        <button class="btn share-pins">Compartilhadas</button>
+                        <button class="btn btn-gray share-pins">Compartilhadas</button>
                     </div>
-                    <div class="right-profile-publish">
-                        <button class="red-btn create-pins">Criar</button>
+                    <div class="profile-actions-right">
+                        <button class="btn-red btn create-pins">Criar</button>
                     </div>
                 </div>
-            </div>
-            <div class="folder-section">
+            </header>
+            <section class="folder-section">
                 <div class="top-folder-section">
                     <img src="images/ill.pinboard.spot.light.svg.jpg" alt="">
                     <h2>Organize suas ideias</h2>
                     <p>Os Pins são as faíscas da inspiração, e as pastas são onde eles ficam salvos. Crie pastas para
                         organizar seus Pins do seu jeito.</p>
-                    <button class="red-btn create-folder-btn">Criar uma pasta</button>
+                    <button class="btn btn-red create-folder">Criar uma pasta</button>
                 </div>
                 <hr>
                 <div class="middle-folder-section">
@@ -316,7 +316,7 @@
                         <img src="images/img19.webp" alt="">   
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
 
 

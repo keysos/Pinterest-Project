@@ -1,4 +1,4 @@
-#navbar {
+.sidebar {
   position: fixed;
   overflow: visible;
   display: flex;
@@ -11,12 +11,12 @@
   z-index: 3;
 }
 
-.navlist {
+.sidebar-list {
   list-style: none;
   padding: 16px 0;
 }
 
-.navlist.top li {
+.sidebar-list-top li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,22 +25,22 @@
   margin-bottom: 24px;
 }
 
-.navlist.bottom {
+.sidebar-list-bottom {
   margin-bottom: 0;
 }
 
-.navbar-item {
+.sidebar-item {
   position: relative;
   top: -2px;
   left: 1px;
   font-size: 2.4rem;
 }
 
-.navbar-item i {
+.sidebar-item i {
   color: #000;
 }
 
-.navbar-item i:hover+.tooltip-text {
+.sidebar-item i:hover+.tooltip {
   display: block;
   z-index: 3;
   bottom: 2px;

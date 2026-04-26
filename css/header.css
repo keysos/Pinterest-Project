@@ -1,20 +1,26 @@
-.inner-container {
+/* classes */
+
+.container-center {
+  width: min(85%, 1200px);
+  margin: 0 auto;
+}
+
+.app {
   margin-left: 72px;
   width: calc(100% - 72px);
 }
 
 /* header */
-.profile-header {
+.profile {
   width: 100%;
   max-height: 1000px;
   position:sticky;
   top: 0;
-  left: 72px;
   background: #fff;
   z-index: 2;
 }
 
-.top-profile-header {
+.profile-header-top {
   display: flex;
 }
 
@@ -27,7 +33,7 @@
   cursor: pointer;
 }
 
-.tooltip-text {
+.tooltip {
   position: absolute;
   background: black;
   color: white;
@@ -39,13 +45,13 @@
   display: none;
 }
 
-.profile-picture img:hover+.tooltip-text {
+.profile-picture img:hover+.tooltip {
   display: block;
   top: 75px;
   right: 25px;
 }
 
-.profile-picture i:hover+.tooltip-text {
+.profile-picture i:hover+.tooltip {
   display: block;
   top: 60px;
   right: 5px;
@@ -62,15 +68,15 @@
   border: 2px solid black;
 }
 
-.search-container {
+.search {
   display: flex;
   flex: 1;
   min-width: 0;
   padding: 16px;
 }
 
-.search-btn,
-.search-bar {
+.search-button,
+.search-input {
   background: #e4e5df;
   border: none;
   padding: 16px;
@@ -78,41 +84,39 @@
   font-weight: 500;
 }
 
-.search-bar {
+.search-input {
   flex: 1 1 auto;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   min-width: 0;
 }
 
-.search-container:hover .search-bar,
-.search-container:hover .search-btn {
+.search:hover .search-input,
+.search:hover .search-button {
   background-color: #dadad3;
 }
 
-.search-bar:focus {
+.search-input:focus {
   outline: none;
 }
 
-.search-btn {
+.search-button {
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
   cursor: pointer;
 }
 
 /* parte de baixo */
-.bottom-profile-header {
+.profile-header-bottom {
   width: 100%;
   padding: 20px 0;
 }
 
 .top-subheader {
   display: flex;
-  width: 85%;
   min-height: 40px;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
 }
 
 .top-subheader h1 {
@@ -150,12 +154,9 @@
 }
 
 .btn {
-  background-color: #e4e5df;
-  color: #000;
-  border-radius: 12px;
-  font-weight: 600;
   border: none;
-  height: 100%;
+  border-radius: var(--radius);
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -166,7 +167,7 @@
 }
 
 .bottom-subheader {
-  width: 85%;
+  width: min(85%, 1200px);
   display: flex;
   font-size: 1.6rem;
   margin: 0 auto;
@@ -180,27 +181,25 @@
   margin-top: 12px;
 }
 
-.bottom-subheader div span {
+.profile__tab {
   padding-bottom: 4px;
 }
 
-.bottom-subheader div:nth-child(2) span {
+.profile__tab.profile__tab--active {
   border-bottom: 1.5px solid #333;
 }
 
 /* profile publish*/
 
-.profile-publish {
-  width: 85%;
+.profile-actions {
   display: flex;
   justify-content: space-between;
   height: 100%;
   max-height: 48px;
-  margin: 0 auto 16px auto;
-
+  margin-top: 16px;
 }
 
-.left-profile-publish {
+.profile-actions-left {
   display: flex;
   align-items: center;
   gap: 24px;
@@ -208,7 +207,7 @@
   font-size: 2rem;
 }
 
-.left-profile-publish i {
+.profile-actions-left i {
   font-size: 2rem;
   cursor: pointer;
 }
@@ -223,14 +222,14 @@
   background-color: #dadad3;
 }
 
-.red-btn {
-  background-color: #e60024;
-  border: none;
+.btn-red {
+  background: var(--primary);
   color: #fff;
-  border-radius: 12px;
-  font-weight: 600;
-  height: 100%;
-  cursor: pointer;
+}
+
+.btn-gray {
+  background: var(--bg-gray);
+  color: var(--text-dark);
 }
 
 .create-pins {
@@ -264,7 +263,7 @@
 }
 
 .top-folder-section p,
-.create-folder-btn {
+.create-folder {
   font-size: 1.4rem;
 }
 
@@ -273,7 +272,7 @@
   padding-bottom: 10px;
 }
 
-.create-folder-btn {
+.create-folder {
   padding: 10px 14px;
   align-self: center;
 }
@@ -306,8 +305,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   justify-content: center;
-
-  margin-left: 35px;
+  padding: 0 35px;
 }
 
 .folder-item {
@@ -321,7 +319,6 @@
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1px;
-  height: 160px;
   border-radius: 16px;
   aspect-ratio: 4 / 3;
   overflow: hidden;
