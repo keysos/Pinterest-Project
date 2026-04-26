@@ -1,3 +1,10 @@
+:root {
+  --primary-red: #e60024;
+  --primary-gray: #e4e5df;
+  --dark-primary-gray: #dadad3;
+  --text-primary-coloir: #000000;
+}
+
 *,
 *::before,
 *::after {
