@@ -1,6 +1,6 @@
 #navbar {
   position: fixed;
-  overflow: hidden auto;
+  overflow: visible;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -8,7 +8,7 @@
   border-right: 1px solid #c8c8c1;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
+  z-index: 3;
 }
 
 .navlist {
@@ -38,4 +38,11 @@
 
 .navbar-item i {
   color: #000;
+}
+
+.navbar-item i:hover+.tooltip-text {
+  display: block;
+  z-index: 3;
+  bottom: 2px;
+  left: 45px;
 }
