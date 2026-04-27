@@ -44,3 +44,7 @@
   bottom: 2px;
   left: 45px;
 }
+
+.center-overlay:focus {
+  box-shadow: 0 0 0 3px #80bfff;
+}

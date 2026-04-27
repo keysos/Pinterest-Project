@@ -38,7 +38,8 @@ a {
   box-shadow: none;
 }
 
-:focus {
+:focus-visible {
+  outline: none;
   box-shadow: 0 0 0 3px #80bfff;
 }
 
@@ -47,20 +48,17 @@ li {
 }
 
 li:focus-within {
-  outline: none;
   box-shadow: 0 0 0 3px #80bfff;
 }
 
-li a:focus-visible {
+li a:focus-visible,
+.folder-item:focus-visible {
   box-shadow: none;
+  outline: none;
 }
 
-:focus-visible {
+.search-input:focus-visible,
+.search-button:focus-visible {
+  box-shadow: none;
   outline: none;
-  box-shadow: 0 0 0 3px #80bfff;
-}
-
-:focus-visible:not(.search-input):not(.search-button) {
-  outline: none;
-  box-shadow: 0 0 0 3px #80bfff;
 }
