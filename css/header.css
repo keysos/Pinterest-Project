@@ -102,8 +102,8 @@
 
 .search-input {
   flex: 1 1 auto;
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
   min-width: 0;
 }
 
@@ -117,8 +117,8 @@
 }
 
 .search-button {
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px !important;
+  border-bottom-left-radius: 12px !important;
   cursor: pointer;
 }
 
@@ -140,6 +140,8 @@
 .profile-section {
   color: var(--text-primary-color);
   cursor: pointer;
+  padding: 16px;
+  border-radius: 20px;
 }
 
 .profile-section img {
@@ -181,11 +183,12 @@
 }
 
 .bottom-subheader div {
-  padding: 6px 10px;
+  padding: 8px 12px;
   color: var(--text-primary-color);
   font-weight: 600;
   cursor: pointer;
   margin-top: 12px;
+  border-radius: 20px;
 }
 
 .profile__tab {
